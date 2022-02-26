@@ -15,6 +15,6 @@ public class AccountController {
 
     @GetMapping("/status/check")
     public String getStatus(){
-        return "working on port : "+environment.getProperty("server.port");
+        return "working on port : "+environment.getProperty("local.server.port");
     }
 }
