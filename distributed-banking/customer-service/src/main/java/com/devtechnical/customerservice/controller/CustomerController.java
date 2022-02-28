@@ -24,6 +24,12 @@ public class CustomerController {
         return "working on port : "+environment.getProperty("local.server.port");
     }
 
+    @GetMapping("/read")
+    public String getReadValue(){
+        logger.info("called getReadValue() method");
+        return environment.getProperty("read.value");
+    }
+
     @GetMapping("/{id}")
     public String getCustomers(@PathVariable String id) {
         logger.info("called getCustomers() method with "+id+" parameter");

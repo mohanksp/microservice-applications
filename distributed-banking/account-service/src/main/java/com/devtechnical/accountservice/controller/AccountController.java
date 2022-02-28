@@ -1,4 +1,4 @@
-package com.devtechnical.accountmanagementservice.controller;
+package com.devtechnical.accountservice.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
